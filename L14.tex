@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Electromagnetism Part II: Lecture 14}
+\author{Imperial College London}
+\date{February 2023}
+
+\begin{document}
+\maketitle
+
+\section{MEs in vacuum, our starting point:}
+
+\begin{center}
+$$
+\vec{\nabla} \cdot \vec{E}=\frac{\rho}{\epsilon_0} \\
+
+\vec{\nabla} \times \vec{B}-\frac{\partial \vec{E}}{c^2 \partial t}=$\mu_0$ \vec{\gamma} \\
+
+\vec{\nabla} \times \vec{E}+\frac{\partial B}{\partial t}=0 \\
+
+\vec{\nabla} \cdot \vec{B}=0 \\
+$$
+
+\end{center}
+
+Now, knowing charge and current densities, $s$ and $\overrightarrow{J}$ and using Newton Laws + the Lorentz force equation:
+$$
+\vec{F}=q(\vec{E}+\vec{v} \times \vec{B})
+$$
+we can solve all the problems.
+But, what happens when we want to incorporate the real matter?
+
+
+\section{EM wave meets a glass window}
+Consists at atoms, quantum objects.
+They will be perturbed by the wave, can absorb same of the energy and emit their own waves.
+
+To consider the wave in the glass, we need to add the incident wave + all waves emitted by all atoms. Complicated!
+
+\section{Macroscopic vs microscopic pictures}
+Macroscopic description involves very large number of atoms and average quantities like field values over big volume containing these atoms.
+In fact we do not need big volumes indeed as a copper cube with $1 \mu m$  side contains $\sim 10^{11}$ atoms!
+Microscopic description involves just a few atoms or even one. It is intrinsically quantum and contains huge internal fields. We will focus on the macroscopic picture!
+
+\section{Free and bound charges in a material}
+In different materials we can have different scenarios.
+- In a copper one electron is detected from every atom. They are free charges, which can move around, together with positive ions, which are stationary.
+- In plastic there are no free charges, but when inserted into the electric field, the centre of the electron cloud gets displaced and molecules acquire an electric dipole moment. This can give rise to electromagnetic effects
+The free and bound charges are described by free charge density $S_f$ and polarisation charge density $S p$.
+Similarly, the current density of free charges is called conduction current density $\vec{F}_c$.
+The bound charges contributing to atomic elective dipoles varying with time are described by polarisation current density $\vec{J}_p$.
+
+\section{Effect of a magnetic dipole moment}
+Atoms con have a magnetic dipole moment. This is a quantum phenomenon, but can be classically visualised as a microscopic current loop. If the distribution of the atomic magnetic dipole moments varies spatially, there is a net current in the material and is described by magnetisation current density $\vec{f} m$.
+
+Surface charge densities and surface current densities:
+\begin{center}
+$$
+\rho_f, \rho_p\left[C / m^3\right] \rightarrow \rho_{s f}, \rho_{s p}\left[C / m^2\right] \\
+
+\vec{J}_c, \vec{J}_p, \vec{J}_m\left[A / m^2\right] \rightarrow \vec{J}_{s c} \vec{J}_{s p} \vec{J}_{s m} {[A / m]} \\
+$$
+\end{center}
+
+\section{The four-field form of Maxwell's equations}
+\begin{center}
+$$
+\vec{\nabla} \cdot \vec{D}=\rho_f, \\
+
+\vec{\nabla} \cdot \vec{B}=0, \\
+
+\vec{\nabla} \times \vec{E}=-\frac{\partial \vec{B}}{\partial t}, \\
+
+\vec{\nabla} \times \vec{H}=\vec{J}_c+\frac{\partial \vec{D}}{\partial t} \\
+$$
+\end{center}
+
+We have a set of equations similar to the MEs in vacuum, in particular with $S_f$ and $\vec{J}_0$ only, but, we introduce two more fields $\vec{D}$ and $\vec{H}$, whish absorb all the material properties.
+The fundamental fields are $\vec{E}$ and $\vec{B}$ (they exert forces) and we need a way to relate them with $\vec{D}$ and $\vec{H}$ :
+$$
+\vec{D}=\varepsilon_0 \varepsilon_r \vec{E}, \quad \vec{H}=\vec{B} / \mu_0 \mu_*
+$$
+$\epsilon_{+}$ - relative permittivity material $\mu_r$ - relative permeability (both are material dependent)$\epsilon_{+} \mu_r$ may be constants or tensors! For simple materials they ore constants.
+
+
+\end{document}
